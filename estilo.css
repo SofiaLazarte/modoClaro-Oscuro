@@ -1,0 +1,30 @@
+/* Estilos para el tema oscuro
+.dark-theme 
+/* {
+    background-color: #1a1a1a;
+    color: #ffffff;
+} */
+  
+  /* Estilos para el tema claro */
+/* .light-theme
+{
+    background-color: #ffffff;
+    color: #000000;
+} */ 
+
+:root                  {
+    --bg: #000  ;
+    --texto: #fff ;
+    --textoControl: "ninja" ;
+} [data-theme="light"] {
+    --bg: #fff  ;
+    --texto: #000 ;
+    --textoControl: "angel" ;
+}
+html,body {
+    background-color: var(--bg)  ;
+    color: var(--texto) ;
+}
+.control::before {
+    content: var(--textoControl);
+}
